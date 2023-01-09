@@ -8,12 +8,12 @@ $(document).ready(
 function start() {
   document.getElementById('title').innerText='NEW YEAR COUNT DOWN'
   //var countDownDate = new Date("2022  Jan 01 00:00:00").getTime();
-var countDownDate = new Date('2023-01-05 12:00:00'.replace(/-/g, "/")).getTime();
+  var countDownDate = new Date('2023-01-08 18:00:00'.replace(/-/g, "/")).getTime();
   var sayTime = new Date('2023-01-05 11:59:49'.replace(/-/g, "/")).getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
-    var audio = new Audio("./countdownsound.mp3");
+    // var audio = new Audio("./countdownsound.mp3");
     // Get today's date and time
     var now = new Date().getTime();
 
@@ -33,14 +33,15 @@ var countDownDate = new Date('2023-01-05 12:00:00'.replace(/-/g, "/")).getTime()
     document.getElementById("second").innerHTML = "<span>" + seconds + "</span>Giây";
     // If the count down is finished, write some text
     if (now - (now % 1000) == sayTime) {
-
-      audio.play();
+      document.getElementById('countdown').play();
+      // audio.play();
     }
     if (distance <= 0) {
       clearInterval(x);
       document.getElementById("container").innerHTML = "<h1>HAPPY NEW YEAR <br> <span>2023</span> </h1>";
-      var audio = new Audio("./song.mp3");
-      audio.play();
+      // var audio = new Audio("./song.mp3");
+      // audio.play();
+      document.getElementById('happynewyear').play();
       Run();
 
     }
