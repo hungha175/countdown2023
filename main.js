@@ -44,6 +44,7 @@ function start() {
       // document.getElementById('happynewyear').play();
       var audio1 = document.getElementById('happynewyear');
       audio1.autoplay = true;
+      audio1.play();
       audio1.load();
       // const soundEffect = new Audio();
       // soundEffect.autoplay =  true;
