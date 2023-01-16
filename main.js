@@ -41,6 +41,7 @@ function start() {
       document.getElementById("container").innerHTML = "<h1>HAPPY NEW YEAR <br> <span>2023</span> </h1>";
       // var audio = new Audio("./song.mp3");
       // audio.play();
+      document.getElementById('happynewyear').load();
       document.getElementById('happynewyear').play();
       // const soundEffect = new Audio();
       // soundEffect.autoplay =  true;
