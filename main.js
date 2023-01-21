@@ -8,8 +8,8 @@ $(document).ready(
 function start() {
   document.getElementById('title').innerText='NEW YEAR COUNT DOWN'
   //var countDownDate = new Date("2022  Jan 01 00:00:00").getTime();
-  var countDownDate = new Date('2023-01-20 00:00:00'.replace(/-/g, "/")).getTime();
-  var sayTime = new Date('2023-01-05 11:59:49'.replace(/-/g, "/")).getTime();
+  var countDownDate = new Date('2023-01-22 00:00:00'.replace(/-/g, "/")).getTime();
+  var sayTime = new Date('2023-01-21 23:59:49'.replace(/-/g, "/")).getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
