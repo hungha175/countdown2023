@@ -38,7 +38,7 @@ function start() {
     }
     if (distance <= 0) {
       clearInterval(x);
-      document.getElementById("container").innerHTML = "<h1>HAPPY NEW YEAR <br> <span>2023</span> </h1>";
+      document.getElementById("container").innerHTML = "<h1>HAPPY NEW YEAR <br> <span>2023</span> <br> <h4>Chúc bạn nhiều sức khỏe <br> An khang và thịnh vượng.</h4> </h1>";
       // var audio = new Audio("./song.mp3");
       // audio.play();
       document.getElementById('happynewyear').play();
